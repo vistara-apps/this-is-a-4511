@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useApp } from '../context/AppContext'
-import { Handshake, Plus, MapPin, Clock, Users, Star, Filter, Search } from 'lucide-react'
+import { HelpingHand, Plus, MapPin, Clock, Users, Star, Filter, Search } from 'lucide-react'
 
 const Collaboration = () => {
   const { collaborations, addCollaboration } = useApp()
@@ -25,7 +25,7 @@ const Collaboration = () => {
       <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between">
           <div className="flex items-center mb-4 md:mb-0">
-            <Handshake className="w-8 h-8 text-green-400 mr-3" />
+            <HelpingHand className="w-8 h-8 text-green-400 mr-3" />
             <div>
               <h1 className="text-2xl font-bold text-white">Collaboration Hub</h1>
               <p className="text-white/70">Find co-founders and team members for your next venture</p>
@@ -81,7 +81,7 @@ const Collaboration = () => {
         <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20">
           <div className="flex items-center">
             <div className="p-2 bg-green-500 rounded-lg">
-              <Handshake className="w-5 h-5 text-white" />
+              <HelpingHand className="w-5 h-5 text-white" />
             </div>
             <div className="ml-4">
               <p className="text-white text-xl font-semibold">{collaborations.length}</p>
@@ -121,7 +121,7 @@ const Collaboration = () => {
         
         {filteredCollaborations.length === 0 ? (
           <div className="bg-white/10 backdrop-blur-md rounded-xl p-8 border border-white/20 text-center">
-            <Handshake className="w-16 h-16 text-white/40 mx-auto mb-4" />
+            <HelpingHand className="w-16 h-16 text-white/40 mx-auto mb-4" />
             <h3 className="text-white font-medium mb-2">No opportunities found</h3>
             <p className="text-white/60 mb-4">
               {searchTerm || filter !== 'all' 
