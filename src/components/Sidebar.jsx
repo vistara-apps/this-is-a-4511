@@ -5,7 +5,7 @@ import {
   LayoutDashboard, 
   Users, 
   Brain, 
-  Handshake, 
+  HeartHandshake, 
   MessageCircle, 
   User,
   TrendingUp
@@ -21,7 +21,7 @@ const Sidebar = () => {
     { name: 'Dashboard', href: '/dashboard', icon: LayoutDashboard },
     { name: 'Communities', href: '/communities', icon: Users },
     { name: 'AI Tools', href: '/ai-tools', icon: Brain },
-    { name: 'Collaboration', href: '/collaboration', icon: Handshake },
+    { name: 'Collaboration', href: '/collaboration', icon: HeartHandshake },
     { name: 'Messages', href: '/messages', icon: MessageCircle },
     { name: 'Profile', href: '/profile', icon: User },
   ]
