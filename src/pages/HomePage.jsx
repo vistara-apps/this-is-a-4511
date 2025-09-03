@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowRight, Users, Brain, Handshake, MessageCircle, Star, TrendingUp } from 'lucide-react'
+import { ArrowRight, Users, Brain, HelpingHand, MessageCircle, Star, TrendingUp } from 'lucide-react'
 import AuthModal from '../components/AuthModal'
 
 const HomePage = () => {
@@ -23,7 +23,7 @@ const HomePage = () => {
       description: 'Leverage AI to brainstorm and validate your startup concepts'
     },
     {
-      icon: Handshake,
+      icon: HelpingHand,
       title: 'Find Collaborators',
       description: 'Connect with co-founders and team members for your next venture'
     }
